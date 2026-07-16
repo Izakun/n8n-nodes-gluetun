@@ -15,10 +15,10 @@ type OpConfig = { method: IHttpRequestMethods; url: string };
 
 const OPERATIONS: Record<string, OpConfig> = {
 	getPublicIp: { method: 'GET', url: '/v1/publicip/ip' },
-	getVpnStatus: { method: 'GET', url: '/v1/openvpn/status' },
+	getVpnStatus: { method: 'GET', url: '/v1/vpn/status' },
 	getForwardedPort: { method: 'GET', url: '/v1/openvpn/portforwarded' },
 	getDnsStatus: { method: 'GET', url: '/v1/dns/status' },
-	setVpnStatus: { method: 'PUT', url: '/v1/openvpn/status' },
+	setVpnStatus: { method: 'PUT', url: '/v1/vpn/status' },
 };
 
 export class Gluetun implements INodeType {
