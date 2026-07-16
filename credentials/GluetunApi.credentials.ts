@@ -10,6 +10,8 @@ export class GluetunApi implements ICredentialType {
 
 	displayName = 'Gluetun API';
 
+	icon = 'file:gluetunApi.svg' as const;
+
 	documentationUrl = 'https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md';
 
 	properties: INodeProperties[] = [

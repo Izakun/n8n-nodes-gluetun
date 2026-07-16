@@ -33,7 +33,10 @@ module.exports = {
 			plugins: ['eslint-plugin-n8n-nodes-base'],
 			extends: ['plugin:n8n-nodes-base/nodes'],
 			rules: {
-				'n8n-nodes-base/node-param-operation-option-action-miscased': 'off',
+				// The pinned plugin (1.16.x) predates NodeConnectionTypes and wants string
+				// literals for inputs/outputs; current n8n tooling requires NodeConnectionTypes.Main.
+				'n8n-nodes-base/node-class-description-inputs-wrong-regular-node': 'off',
+				'n8n-nodes-base/node-class-description-outputs-wrong': 'off',
 			},
 		},
 	],

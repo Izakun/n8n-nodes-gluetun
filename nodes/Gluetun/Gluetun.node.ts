@@ -8,6 +8,7 @@ import {
 	INodeTypeDescription,
 	JsonObject,
 	NodeApiError,
+	NodeConnectionTypes,
 } from 'n8n-workflow';
 
 type OpConfig = { method: IHttpRequestMethods; url: string };
@@ -24,7 +25,7 @@ export class Gluetun implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Gluetun',
 		name: 'gluetun',
-		icon: 'file:gluetun.svg',
+		icon: { light: 'file:gluetun.svg', dark: 'file:gluetun.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
@@ -33,8 +34,8 @@ export class Gluetun implements INodeType {
 			name: 'Gluetun',
 		},
 		usableAsTool: true,
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 			{
 				name: 'gluetunApi',
