@@ -53,6 +53,19 @@ npm install --ignore-scripts
 npm run build
 ```
 
+## Usage example
+
+Read the VPN public IP:
+
+1. Add the node after a trigger (e.g. *When clicking 'Test workflow'*).
+2. Select your credential.
+3. **Get Public IP**.
+4. Execute the node — example output:
+
+```json
+{ "public_ip": "146.70.194.87", "country": "France", "city": "Paris" }
+```
+
 ## Disclaimer
 
 This project isn't affiliated with or endorsed by the gluetun project. gluetun is the
