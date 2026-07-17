@@ -25,7 +25,7 @@ export class Gluetun implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Gluetun',
 		name: 'gluetun',
-		icon: { light: 'file:gluetun.svg', dark: 'file:gluetun.svg' },
+		icon: { light: 'file:gluetun.svg', dark: 'file:gluetun.dark.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
