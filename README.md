@@ -3,22 +3,34 @@
 # n8n-nodes-gluetun
 
 [![npm version](https://img.shields.io/npm/v/n8n-nodes-gluetun.svg)](https://www.npmjs.com/package/n8n-nodes-gluetun)
+[![npm downloads](https://img.shields.io/npm/dm/n8n-nodes-gluetun.svg)](https://www.npmjs.com/package/n8n-nodes-gluetun)
 [![License: MIT](https://img.shields.io/npm/l/n8n-nodes-gluetun.svg)](./LICENSE)
+[![n8n verified](https://img.shields.io/badge/n8n-verified%20community%20node-EA4B71)](https://docs.n8n.io/integrations/community-nodes/installation/verified-install/)
 
 Community node for n8n to control a [gluetun](https://github.com/qdm12/gluetun) VPN
 client through its HTTP control server.
 
+> ✅ **Verified community node** — available directly from the node panel in n8n
+> (self-hosted **and** n8n Cloud).
+
 ## Installation
 
-In n8n: **Settings → Community Nodes → Install** and enter `n8n-nodes-gluetun`.
+This is a **verified** community node: in n8n, click **+ (Add node)** and search for
+`gluetun` — no manual install needed.
+
+<details>
+<summary>Manual install (older n8n, or as an unverified package)</summary>
+
+**Settings → Community Nodes → Install** → `n8n-nodes-gluetun`.
+</details>
 
 ## Operations
 
 | Operation | Endpoint | Description |
 |---|---|---|
 | **Get Public IP** | `GET /v1/publicip/ip` | Public IP, country, region of the VPN exit |
-| **Get VPN Status** | `GET /v1/openvpn/status` | Current VPN status (running / stopped) |
-| **Set VPN Status** | `PUT /v1/openvpn/status` | Start or stop the VPN |
+| **Get VPN Status** | `GET /v1/vpn/status` | Current VPN status (running / stopped) |
+| **Set VPN Status** | `PUT /v1/vpn/status` | Start or stop the VPN |
 | **Get Forwarded Port** | `GET /v1/openvpn/portforwarded` | The VPN forwarded port |
 | **Get DNS Status** | `GET /v1/dns/status` | Current DNS-over-TLS status |
 
