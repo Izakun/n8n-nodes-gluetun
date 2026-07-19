@@ -63,7 +63,7 @@ Read the VPN public IP:
 4. Execute the node — example output:
 
 ```json
-{ "public_ip": "146.70.194.87", "country": "France", "city": "Paris" }
+{ "public_ip": "203.0.113.42", "country": "Netherlands", "city": "Amsterdam" }
 ```
 
 ## Disclaimer
